@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nidhi Dilipbhai Gohil — Flutter Developer Portfolio</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f5f7fa;color:#1a1a1a;min-height:100vh}
+a{text-decoration:none;color:inherit}
+.port{max-width:820px;margin:0 auto;padding:2rem 1.25rem 4rem}
+.hero{background:#fff;border-radius:14px;border:0.5px solid #dde3ec;padding:2rem 2rem 1.75rem;margin-bottom:1rem}
+.hero-name{font-size:30px;font-weight:600;color:#1B4F8A;letter-spacing:-0.5px}
+.hero-title{font-size:13.5px;color:#555;margin-top:5px;letter-spacing:.02em}
+.hero-contact{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px}
+.chip{display:flex;align-items:center;gap:6px;font-size:13px;color:#555;transition:color .15s}
+.chip i{font-size:15px;color:#1B4F8A}
+.chip:hover{color:#1B4F8A}
+.avail{display:inline-flex;align-items:center;gap:7px;background:#E1F5EE;color:#0a6647;font-size:12px;font-weight:500;padding:5px 13px;border-radius:20px;margin-top:14px}
+.dot-green{width:7px;height:7px;border-radius:50%;background:#0F6E56}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:1rem}
+.stat{background:#fff;border-radius:12px;border:0.5px solid #dde3ec;padding:.9rem 1rem}
+.stat-num{font-size:24px;font-weight:600;color:#1B4F8A}
+.stat-lbl{font-size:12px;color:#777;margin-top:3px}
+.card{background:#fff;border-radius:14px;border:0.5px solid #dde3ec;padding:1.5rem 1.75rem;margin-bottom:1rem}
+.sec-head{font-size:10.5px;font-weight:600;letter-spacing:.09em;color:#1B4F8A;text-transform:uppercase;margin-bottom:1.1rem;display:flex;align-items:center;gap:7px}
+.sec-head::after{content:'';flex:1;height:0.5px;background:#dde3ec}
+.about-text{font-size:13.5px;color:#444;line-height:1.75}
+.exp-row{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:0.5px solid #eef0f4}
+.exp-row:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+.exp-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.exp-role{font-size:14px;font-weight:600;color:#1a1a1a}
+.exp-date{font-size:12px;color:#999;white-space:nowrap;margin-top:2px;flex-shrink:0}
+.exp-co{font-size:13px;color:#666;margin-top:3px}
+.exp-bullets{margin-top:9px;padding-left:15px;list-style:disc}
+.exp-bullets li{font-size:13px;color:#555;line-height:1.65;margin-bottom:4px}
+.skills-grid{display:flex;flex-direction:column;gap:10px}
+.skill-row{display:flex;gap:10px;align-items:flex-start}
+.skill-cat{font-size:12px;font-weight:600;color:#333;width:115px;flex-shrink:0;padding-top:5px}
+.skill-tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:12px;color:#1B4F8A;background:#EAF2FB;border-radius:5px;padding:4px 10px;border:0.5px solid #c8ddf5}
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+.proj-card{background:#f8fafc;border-radius:10px;padding:1rem 1.1rem;border:0.5px solid #dde3ec;transition:border-color .15s}
+.proj-card:hover{border-color:#1B4F8A}
+.proj-name{font-size:13.5px;font-weight:600;color:#1a1a1a}
+.proj-stack{font-size:11.5px;color:#1B4F8A;margin-top:3px;font-weight:500}
+.proj-desc{font-size:12.5px;color:#555;margin-top:7px;line-height:1.55}
+.edu-title{font-size:14px;font-weight:600;color:#1a1a1a}
+.edu-sub{font-size:13px;color:#666;margin-top:4px}
+.bottom-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1.2rem}
+.lang-row{display:flex;gap:7px;flex-wrap:wrap;margin-top:2px}
+.lang-chip{font-size:13px;color:#333;background:#f5f7fa;border:0.5px solid #dde3ec;border-radius:6px;padding:4px 13px}
+.award-row{display:flex;align-items:center;gap:9px;font-size:13px;color:#555;margin-top:2px}
+.award-row i{font-size:18px;color:#1B4F8A}
+@media(max-width:580px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .exp-top{flex-direction:column;gap:2px}
+  .exp-date{white-space:normal}
+  .skill-cat{width:90px}
+  .bottom-row{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<div class="port">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-name">Nidhi Dilipbhai Gohil</div>
+    <div class="hero-title">Senior Flutter Developer &nbsp;·&nbsp; Lead Mobile Developer &nbsp;·&nbsp; Mobile Application Developer</div>
+    <div class="hero-contact">
+      <a class="chip" href="mailto:gohilnidhi308@gmail.com"><i class="ti ti-mail"></i>gohilnidhi308@gmail.com</a>
+      <a class="chip" href="tel:+919825961675"><i class="ti ti-phone"></i>+91-9825961675</a>
+      <a class="chip" href="https://linkedin.com/in/nidhi-gohil" target="_blank"><i class="ti ti-brand-linkedin"></i>linkedin.com/in/nidhi-gohil</a>
+      <a class="chip" href="https://github.com/nidhidiff30" target="_blank"><i class="ti ti-brand-github"></i>github.com/nidhidiff30</a>
+      <span class="chip"><i class="ti ti-map-pin"></i>Surat, Gujarat, India</span>
+    </div>
+    <div class="avail"><div class="dot-green"></div>Available for freelance &amp; full-time roles</div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat"><div class="stat-num">4+</div><div class="stat-lbl">Years experience</div></div>
+    <div class="stat"><div class="stat-num">8+</div><div class="stat-lbl">Apps delivered</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Developers mentored</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-lbl">Key projects</div></div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="card">
+    <div class="sec-head">About</div>
+    <p class="about-text">Senior Flutter Developer with 4+ years of experience delivering production-grade mobile applications for Android and iOS. Experienced in leading development teams, Clean Architecture, REST API integration, AI/LLM integration, and performance optimization across Legal-Tech, E-commerce, and Social Media domains. Available for freelance, project-based, and full-time remote opportunities.</p>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="card">
+    <div class="sec-head">Experience</div>
+
+    <div class="exp-row">
+      <div class="exp-top">
+        <div>
+          <div class="exp-role">Lead Application Developer</div>
+          <div class="exp-co">Lawtach Vakalat House &nbsp;·&nbsp; Surat, Gujarat</div>
+        </div>
+        <div class="exp-date">Apr 2024 – Jun 2026</div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Architected Flutter app and database for a nationwide multi-tenant Legal-Tech platform with RBAC and secure data models</li>
+        <li>Mentored 3 junior developers; achieved 20% sprint velocity increase via code review standards and best practices</li>
+        <li>Integrated secure payment gateways and live real-time multi-user features into core workflows</li>
+        <li>Built Python automation scripts for legal case data extraction, cutting manual entry time by 70%</li>
+        <li>Spearheaded production debugging, profiling, and low-level memory optimizations</li>
+      </ul>
+    </div>
+
+    <div class="exp-row">
+      <div class="exp-top">
+        <div>
+          <div class="exp-role">Software Engineer</div>
+          <div class="exp-co">Differenz System Pvt Ltd &nbsp;·&nbsp; Surat, Gujarat</div>
+        </div>
+        <div class="exp-date">Aug 2021 – Oct 2023</div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Delivered 8+ production-grade cross-platform Flutter apps across E-commerce, Social Media, and AI domains</li>
+        <li>Built reusable Clean Architecture component libraries, reducing dev time across client projects by 30%</li>
+        <li>Developed real-time chat, audio calling, and video calling using Firebase and Agora SDK</li>
+        <li>Implemented state management (BLoC, Riverpod, Provider) and REST API integrations for multi-client workflows</li>
+        <li>Managed end-to-end App Store and Play Store deployment pipeline including signing and release management</li>
+      </ul>
+    </div>
+
+    <div class="exp-row">
+      <div class="exp-top">
+        <div>
+          <div class="exp-role">Flutter Developer Intern → Junior Developer</div>
+          <div class="exp-co">Infozium Solutions Pvt Ltd &nbsp;·&nbsp; Surat, Gujarat</div>
+        </div>
+        <div class="exp-date">Jun 2020 – Aug 2021</div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Completed 9-month internship converting to full-time employment; contributed to live Flutter client projects for Android and iOS</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="card">
+    <div class="sec-head">Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row"><div class="skill-cat">Frameworks</div><div class="skill-tags"><span class="tag">Flutter</span><span class="tag">BLoC</span><span class="tag">Riverpod</span><span class="tag">Provider</span><span class="tag">GetX</span><span class="tag">Clean Architecture</span></div></div>
+      <div class="skill-row"><div class="skill-cat">Languages</div><div class="skill-tags"><span class="tag">Dart</span><span class="tag">Python</span></div></div>
+      <div class="skill-row"><div class="skill-cat">Backend & DB</div><div class="skill-tags"><span class="tag">REST APIs</span><span class="tag">Firebase</span><span class="tag">Supabase</span><span class="tag">SQLite</span><span class="tag">Hive</span><span class="tag">Dio</span></div></div>
+      <div class="skill-row"><div class="skill-cat">AI / LLM</div><div class="skill-tags"><span class="tag">OpenAI</span><span class="tag">Claude</span><span class="tag">Gemini</span></div></div>
+      <div class="skill-row"><div class="skill-cat">Tools</div><div class="skill-tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">CI/CD</span><span class="tag">Postman</span><span class="tag">Figma</span><span class="tag">Android Studio</span><span class="tag">VS Code</span></div></div>
+      <div class="skill-row"><div class="skill-cat">Other</div><div class="skill-tags"><span class="tag">Agora SDK</span><span class="tag">Razorpay</span><span class="tag">FCM</span><span class="tag">RBAC</span><span class="tag">Google APIs</span><span class="tag">AdMob</span><span class="tag">Push Notifications</span><span class="tag">Performance Optimization</span></div></div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="card">
+    <div class="sec-head">Projects</div>
+    <div class="proj-grid">
+      <div class="proj-card">
+        <div class="proj-name">Vakalat</div>
+        <div class="proj-stack">Flutter · Supabase · RBAC</div>
+        <div class="proj-desc">Multi-role legal ecosystem for 4 user types with automated case tracking and real-time chat</div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-name">E-Commerce Module</div>
+        <div class="proj-stack">Flutter · REST APIs · Razorpay</div>
+        <div class="proj-desc">End-to-end e-commerce with product catalogs, order workflows, and payment gateway integration</div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-name">LookMa</div>
+        <div class="proj-stack">Flutter · Firebase · Agora SDK</div>
+        <div class="proj-desc">Social platform with live user feeds, real-time chat, and audio/video calling</div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-name">Dog &amp; Cat Identifier</div>
+        <div class="proj-stack">Flutter Flavors · AI</div>
+        <div class="proj-desc">White-label AI breed identification — multiple branded app versions from a single codebase</div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-name">Gita Shlokas</div>
+        <div class="proj-stack">Flutter · Riverpod · OpenAI · Claude</div>
+        <div class="proj-desc">AI-accelerated Flutter app achieving 3x faster dev velocity via LLM code generation</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="card">
+    <div class="sec-head">Education</div>
+    <div class="edu-title">M.Sc. IT — Integrated Master's in Information Technology</div>
+    <div class="edu-sub">Babu Madhav Institute of Information Technology, Uka Tarsadia University &nbsp;·&nbsp; 2021</div>
+  </div>
+
+  <!-- AWARDS + LANGUAGES -->
+  <div class="card">
+    <div class="bottom-row">
+      <div>
+        <div class="sec-head">Languages</div>
+        <div class="lang-row">
+          <span class="lang-chip">English</span>
+          <span class="lang-chip">Hindi</span>
+          <span class="lang-chip">Gujarati</span>
+        </div>
+      </div>
+      <div>
+        <div class="sec-head">Award</div>
+        <div class="award-row"><i class="ti ti-award"></i>Punctual Employee Award — Differenz System Pvt Ltd</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
